@@ -1,1 +1,9 @@
-{{post}}
+<h2>{{model.title}}</h2>
+
+<article>
+  {{model.body}}
+</article>
+
+{{#link-to 'posts.post.edit' model}}Edit{{/link-to}}
+
+{{outlet}}

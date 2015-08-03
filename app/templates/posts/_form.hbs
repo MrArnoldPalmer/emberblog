@@ -1,0 +1,21 @@
+<p>
+  <label for="title">Title</label><br>
+  {{input value=model.title id="title"}}
+</p>
+
+<p>
+  <label for="text">text</label><br>
+  {{textarea value=model.text id="text"}}
+</p>
+
+<p>
+  <label for="author">Author</label><br>
+  {{input value=model.author id="author"}}
+</p>
+
+<p>
+  <label for="published">Publish Date</label><br>
+  {{input value=model.published id="published"}}
+</p>
+
+<button {{action 'save'}} id="save">Save</button>
