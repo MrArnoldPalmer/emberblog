@@ -1,2 +1,27 @@
+<div class="ui container">
+  <div class="ui top attached tabular menu">
+    <div class="item">
+      <h1 class="ui header">
+        Mitchell Valine
+      </h1>
+    </div>
+    <div class="right item">
+      {{#link-to 'posts' class="item"}}
+        Blog
+      {{/link-to}}
+      {{#link-to 'projects' class="item"}}
+        Projects
+      {{/link-to}}
+    </div>
+  </div>
 
-{{outlet}}
+
+  {{#if session.isAuthenticated}}
+    <a {{ action 'invalidateSession' }}>Logout</a>
+  {{else}}
+    {{#link-to 'login'}}Admin{{/link-to}}
+  {{/if}}
+
+  {{outlet}}
+
+</div>
