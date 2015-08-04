@@ -44,7 +44,7 @@ module.exports = function(environment) {
   }
 
   ENV['simple-auth-token'] = {
-    serverTokenEndpoint: 'http://localhost:4000/api/authenticate/',
+    serverTokenEndpoint: 'http://emberblogapi.herokuapp.com/api/authenticate/',
     identificationField: 'name',
     passwordField: 'password'
   };
