@@ -1,1 +1,21 @@
-<div class="type-text"></div>
+{{type-text}}
+
+<div class="ui items">
+  {{#each model as |project|}}
+    <div class="item">
+      <div class="image">
+        <img src={{project.screenshotURL}}>
+      </div>
+      <div class="content">
+        {{#link-to 'project' project.id}}
+          <div class="header">
+            {{project.title}}
+          </div>
+          <div class="description">
+            <p>{{{truncate-string project.text limit=500}}}</p>
+          </div>
+        {{/link-to}}
+      </div>
+    </div>
+  {{/each}}
+</div>

@@ -15,13 +15,7 @@
     </div>
   </div>
 
-
-  {{#if session.isAuthenticated}}
-    <a {{ action 'invalidateSession' }}>Logout</a>
-  {{else}}
-    {{#link-to 'login'}}Admin{{/link-to}}
-  {{/if}}
-
   {{outlet}}
 
+  <div class="ui divider"></div>
 </div>

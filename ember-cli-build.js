@@ -20,5 +20,6 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
   app.import('bower_components/semantic-ui/dist/semantic.js');
   app.import('bower_components/semantic-ui/dist/semantic.css');
+  app.import('bower_components/typed.js/dist/typed.min.js');
   return app.toTree();
 };
