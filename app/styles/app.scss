@@ -1,13 +1,7 @@
 @import "susy";
 
-.ui.card {
-  max-height: 400px;
-  word-wrap: break-word;
-  overflow: auto;
-}
-
-.ui.card::-webkit-scrollbar {
-  display: none;
+.index-column {
+  margin-top : 20px;
 }
 
 .typed-cursor{
