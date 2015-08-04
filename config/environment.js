@@ -43,5 +43,15 @@ module.exports = function(environment) {
 
   }
 
+  ENV['simple-auth-token'] = {
+    serverTokenEndpoint: 'http://localhost:4000/api/authenticate/',
+    identificationField: 'name',
+    passwordField: 'password'
+  };
+  ENV['simple-auth'] = {
+    authorizer: 'simple-auth-authorizer:token',
+    crossOriginWhitelist: ['http://localhost:4000']
+  };
+
   return ENV;
 };
