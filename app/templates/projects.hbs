@@ -1,0 +1,12 @@
+{{link-to 'New Project' 'project.new'}}
+
+<h2>Posts</h2>
+<ul>
+  {{#each project in model}}
+  <li>
+    {{#link-to 'project' project.id}}
+      {{project.title}}
+    {{/link-to}}
+  </li>
+  {{/each}}
+</ul>

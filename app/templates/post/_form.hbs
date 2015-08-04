@@ -1,0 +1,29 @@
+<div class="row">
+  <p class="ui input">
+    <label for="title">Title</label><br>
+    {{input value=model.title id="title"}}
+  </p>
+</div>
+
+<div class="row">
+  <p class="ui input">
+    <label for="text">text</label><br>
+    {{textarea value=model.text id="text" cols="80" rows="20"}}
+  </p>
+</div>
+
+<div class="row">
+  <p class="ui input">
+    <label for="author">Author</label><br>
+    {{input value=model.author id="author"}}
+  </p>
+</div>
+
+<div class="row">
+  <p class="ui input">
+    <label for="published">Publish Date</label><br>
+    {{input value=model.published id="published"}}
+  </p>
+</div>
+
+<button {{action 'save'}} id="save">Save</button>

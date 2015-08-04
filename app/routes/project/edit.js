@@ -4,9 +4,9 @@ import AuthenticatedRouteMixin from 'simple-auth/mixins/authenticated-route-mixi
 export default Ember.Route.extend(AuthenticatedRouteMixin, {
   actions: {
     save: function() {
-      var post = this.currentModel;
-      post.save().then(() => {
-        this.transitionTo('posts.post', post.id);
+      var project = this.currentModel;
+      project.save().then(() => {
+        this.transitionTo('project', project.id);
       });
     }
   }

@@ -1,14 +1,12 @@
-{{link-to 'New post' 'posts.new'}}
+{{link-to 'New post' 'post.new'}}
 
 <h2>Posts</h2>
 <ul>
   {{#each post in model}}
   <li>
-    {{#link-to 'posts.post' post.id}}
+    {{#link-to 'post' post.id}}
       {{post.title}}
     {{/link-to}}
   </li>
   {{/each}}
 </ul>
-
-{{outlet}}
