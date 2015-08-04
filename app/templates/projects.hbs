@@ -1,17 +1,17 @@
 <h2>Projects</h2>
-<div class="ui items">
+<div class="ui very relaxed link items">
   {{#each model as |project|}}
     <div class="item">
       <div class="image">
         <img src={{project.screenshotURL}}>
       </div>
-      <div class="content">
+      <div class="middle aligned content">
         {{#link-to 'project' project.id}}
-          <div class="header">
+          <div class="ui header">
             {{project.title}}
           </div>
           <div class="description">
-            <p>{{{truncate-string project.text limit=1000}}}</p>
+            <p>{{{truncate-string project.text limit=500}}}</p>
           </div>
         {{/link-to}}
       </div>
