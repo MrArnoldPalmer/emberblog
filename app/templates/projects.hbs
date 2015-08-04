@@ -1,12 +1,20 @@
-{{link-to 'New Project' 'project.new'}}
-
-<h2>Posts</h2>
-<ul>
-  {{#each project in model}}
-  <li>
-    {{#link-to 'project' project.id}}
-      {{project.title}}
-    {{/link-to}}
-  </li>
+<h2>Projects</h2>
+<div class="ui items">
+  {{#each model as |project|}}
+    <div class="item">
+      <div class="image">
+        <img src={{project.screenshotURL}}>
+      </div>
+      <div class="content">
+        {{#link-to 'project' project.id}}
+          <div class="header">
+            {{project.title}}
+          </div>
+          <div class="description">
+            <p>{{{truncate-string project.text limit=1000}}}</p>
+          </div>
+        {{/link-to}}
+      </div>
+    </div>
   {{/each}}
-</ul>
+</div>

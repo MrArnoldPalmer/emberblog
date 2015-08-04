@@ -1,9 +1,7 @@
-<h2>{{model.title}}</h2>
+<a href={{model.linkURL}} target="_blank">
+  <h2>{{model.title}}</h2>
+</a>
 
-<article>
-  {{{model.text}}}
-</article>
-
-{{#link-to 'project.edit' model}}Edit{{/link-to}}
-
+<img class="ui image medium left floated" src={{model.screenshotURL}}>
+<p>{{{model.text}}}</p>
 {{outlet}}

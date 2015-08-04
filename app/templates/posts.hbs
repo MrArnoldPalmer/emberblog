@@ -1,12 +1,15 @@
-{{link-to 'New post' 'post.new'}}
-
 <h2>Posts</h2>
-<ul>
+<div class="ui items">
   {{#each post in model}}
-  <li>
+  <div class="ui item">
     {{#link-to 'post' post.id}}
-      {{post.title}}
+      <div class="ui header">
+        {{post.title}}
+      </div>
+      <div class="content">
+        {{{truncate-string post.text limit=500}}}
+      </div>
     {{/link-to}}
-  </li>
+  </div>
   {{/each}}
-</ul>
+</div>

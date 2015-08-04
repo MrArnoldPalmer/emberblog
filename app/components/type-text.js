@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   didInsertElement: function() {
     Ember.$(function(){
         Ember.$(".type-text").typed({
-            strings: ["Web Developer", "Some Projects..."],
+            strings: ["Web Developer..."],
             typeSpeed: 100
         });
     });

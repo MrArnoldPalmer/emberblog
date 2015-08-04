@@ -1,9 +1,9 @@
-<h2>{{model.title}}</h2>
+<h2 class="header">{{model.title}}</h2>
 
 <article>
   {{{model.text}}}
 </article>
-
-{{#link-to 'post.edit' model}}Edit{{/link-to}}
+<br>
+-{{model.author}}
 
 {{outlet}}

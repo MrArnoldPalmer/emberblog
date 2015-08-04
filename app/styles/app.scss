@@ -1,5 +1,22 @@
 @import "susy";
 
-.text-center {
-  text-align: center;
+.ui.card {
+  max-height: 400px;
+  word-wrap: break-word;
+  overflow: auto;
 }
+
+.ui.card::-webkit-scrollbar {
+  display: none;
+}
+//
+// .project-content {
+//   height: 100%;
+//   overflow: auto;
+//   height: 200px;
+//   width: 100%;
+// }
+//
+// .project-content::-webkit-scrollbar {
+//   display: none;
+// }
